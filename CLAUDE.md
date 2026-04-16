@@ -61,6 +61,42 @@ Supporting libraries (OpenAPI-generated HTTP clients, published separately on np
 | `edc-lib` | EDC REST API client (generated from EDC OpenAPI spec) |
 | `ids-broker-lib` | IDS Metadata Broker REST API client |
 
+## Repository & Git Setup
+
+This repo (`RocketCodeGmbH/dssim`) is the parent monorepo. Each subfolder is a **git submodule** forked to the RocketCodeGmbH organization. Every submodule has two remotes:
+
+- `origin` → `https://github.com/RocketCodeGmbH/<repo>` (fork — push here)
+- `upstream` → original Fraunhofer IEE or eclipse-edc repo (pull upstream changes from here)
+
+**Cloning on a new machine:**
+```bash
+git clone --recurse-submodules https://github.com/RocketCodeGmbH/dssim.git
+```
+
+**Working inside a submodule:**
+```bash
+cd dssim-core          # enter the submodule
+git checkout -b my-feature
+# ... make changes, commit ...
+git push origin my-feature   # pushes to RocketCodeGmbH/dssim-core
+```
+
+**After committing in a submodule, update the parent's pinned reference:**
+```bash
+cd ..                  # back to parent
+git add dssim-core
+git commit -m "bump dssim-core to <sha>"
+git push
+```
+
+**Pulling upstream Fraunhofer changes into a fork:**
+```bash
+cd dssim-core
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+
 ## Repository Layout
 
 This is **not** a workspace — each TypeScript package is self-contained with its own `node_modules` and must be installed/built independently.
