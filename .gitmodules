@@ -1,0 +1,39 @@
+[submodule "dssim-core"]
+	path = dssim-core
+	url = https://github.com/RocketCodeGmbH/dssim-core.git
+
+[submodule "dssim-scenarios"]
+	path = dssim-scenarios
+	url = https://github.com/RocketCodeGmbH/dssim-scenarios.git
+
+[submodule "dssim-scenario-controller"]
+	path = dssim-scenario-controller
+	url = https://github.com/RocketCodeGmbH/dssim-scenario-controller.git
+
+[submodule "dssim-edc-controller"]
+	path = dssim-edc-controller
+	url = https://github.com/RocketCodeGmbH/dssim-edc-controller.git
+
+[submodule "dssim-ids-controller"]
+	path = dssim-ids-controller
+	url = https://github.com/RocketCodeGmbH/dssim-ids-controller.git
+
+[submodule "dssim-kubernetes-controller"]
+	path = dssim-kubernetes-controller
+	url = https://github.com/RocketCodeGmbH/dssim-kubernetes-controller.git
+
+[submodule "dsc-lib"]
+	path = dsc-lib
+	url = https://github.com/RocketCodeGmbH/dsc-lib.git
+
+[submodule "edc-lib"]
+	path = edc-lib
+	url = https://github.com/RocketCodeGmbH/edc-lib.git
+
+[submodule "ids-broker-lib"]
+	path = ids-broker-lib
+	url = https://github.com/RocketCodeGmbH/ids-broker-lib.git
+
+[submodule "edc-connector"]
+	path = edc-connector
+	url = https://github.com/RocketCodeGmbH/EDC-Connector.git

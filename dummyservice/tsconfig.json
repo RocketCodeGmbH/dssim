@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",              /* Ecmascript Version */
+    "module": "commonjs",         /* Module System */
+    "outDir": "./dist",           /* Ausgabe-Verzeichnis für die kompilierten JavaScript-Dateien */
+    "strict": true,               /* Strikter Typ-Check */
+    "esModuleInterop": true       /* ES-Modul-Interop aktivieren */
+  },
+  "include": [
+    "index.ts"                     /* Eingabe-Datei(en) für den Compiler */
+  ]
+}
